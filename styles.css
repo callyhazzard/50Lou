@@ -69,11 +69,16 @@ h4{
   right:25%;
   font-family: 'Saira Condensed', Helvetica, sans-serif;
 }
+.caption{
+  color:#397d7c;
+  align: center;
+}
 .search input{
   width: 325px;
   display:horizontal center;
 }
 .flex-container {
   display: flex;
-  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items: center;
 }
