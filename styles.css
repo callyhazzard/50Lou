@@ -23,14 +23,12 @@ img{
   /* i can use max-width:100% also */
   background:url("logo.jpg");
   /* remove height when I have an image */
-  display: center;
-
+  display:flex;
 }
 nav{
-  background-color:;
   text-align: center;
   margin:10px;
-  padding-top:auto;
+  padding-top:50px;
 }
 nav a{
   padding:10px;
@@ -41,10 +39,6 @@ nav a{
 }
 nav a:hover{
   color:#62d6d9;
-  text-decoration:;
-}
-h4{
-  color:
 }
 .wrapper{
   width:90%;
@@ -53,7 +47,6 @@ h4{
   padding:10px;
   background-color: white;
 }
-
 .hero{
   width: 100%;
   background:url("giftlarge2.jpg");
@@ -71,11 +64,11 @@ h4{
 }
 .caption{
   color:#397d7c;
-  align: center;
+  display:flex;
 }
 .search input{
   width: 325px;
-  display:horizontal center;
+  display:flex;
 }
 .flex-container {
   display: flex;
@@ -106,7 +99,7 @@ h4{
 button{
   background-color:white;
   border-radius:3px;
-  padding-auto:10px;
+  padding:10px;
 
 }
 /*
