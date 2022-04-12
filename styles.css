@@ -82,7 +82,7 @@ nav a:hover{
   background:#6d6e73;
   border-radius:3px;
   box-shadow:0 0 30px -10px #000;
-  margin:calc(50vh - 220px) auto;
+  margin:calc(20vh - 220px) auto;
   padding:20px 30px;
   max-width:calc(100vw - 40px);
   box-sizing:border-box;
