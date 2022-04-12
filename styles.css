@@ -153,3 +153,20 @@ span{
 }*/
 /*additional styles borrowed from https://codepen.io/leenalavanya/pen/mPWdPZ*/
 /*END STYLES FOR CONTACT PAGE*/
+/*desktop styles below*/
+@media only screen and (min-width: 700px) {
+  .wrapper{
+    width:85%;
+    margin:auto;
+    }
+  .hero{
+    height:400px;
+  }
+nav li{
+  display: inline-block;
+}
+.search{
+  display:flex;
+  min-width:100%;
+}
+}
