@@ -75,6 +75,18 @@ nav a:hover{
   justify-content:space-around;
   align-items: center;
 }
+.top{
+  text-align: center;
+  margin:10px;
+  padding-top:50px;
+}
+.top a{
+  padding:10px;
+  margin:5px;
+  color:#397d7c;
+  text-decoration:none;
+  font-size: 1em;
+}
 /*STYLES FOR CONTACT PAGE*/
 .contact-form{
   width:340px;
