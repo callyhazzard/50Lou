@@ -77,15 +77,15 @@ span > div {
 }
 /*copied from codepen https://codepen.io/qkombur/pen/dPxjJy example*/
 /* sets flex box to column for mobile */
-.container {
+.flex-container {
     display: flex;
     color: white;
-    flex-direction: column;
+    flex-wrap:wrap;
     align-items: center;
     background: #333;
 }
 /* sets all flexboxes to be same length */
-.container span {
+.flex-container span {
     flex: 1;
 	flex-wrap:wrap;
 	display:flex;
@@ -93,22 +93,22 @@ span > div {
 /* Order # can be changed to switch order of boxes z-index is used to layer boxes. */
 .product1 {
     order: 1;
-    background: #F08080;
+    background: #77787e;
     z-index: 200;
 }
 .product2 {
     order: 2;
-    background: #20B2AA;
+    background: #636469;
     z-index: 150;
 }
 .product3 {
     order: 3;
-    background: #DA70D6;
+    background: #4f5054;
     z-index: 100;
 }
 .product4 {
     order: 4;
-    background: #DA70D6;
+    background: #3b3c3f;
     z-index: 50;
 }
 /* the following media's are to make this look nicer on bigger screens. */
