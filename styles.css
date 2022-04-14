@@ -87,6 +87,8 @@ span > div {
 /* sets all flexboxes to be same length */
 .container span {
     flex: 1;
+	flex-wrap:wrap;
+	display:flex;
 }
 /* Order # can be changed to switch order of boxes z-index is used to layer boxes. */
 .product1 {
