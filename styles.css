@@ -90,12 +90,11 @@ span > div {
 	display:flex;
 }
 /* Order # can be changed to switch order of boxes z-index is used to layer boxes. */
-.product1 {
-    order: 1;
+.product {
     background: #77787e;
     z-index: 150;
 }
-.product2 {
+/*.product2 {
     order: 2;
     background: #636469;
     z-index: 150;
@@ -110,6 +109,7 @@ span > div {
     background: #3b3c3f;
     z-index: 150;
 }
+*/
 /* the following media's are to make this look nicer on bigger screens. */
 
 @media screen and (min-width: 1000px) {
