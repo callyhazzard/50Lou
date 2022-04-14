@@ -112,14 +112,9 @@ span > div {
     z-index: 50;
 }
 /* the following media's are to make this look nicer on bigger screens. */
-@media screen and (min-width: 600px) {
-.container {
-	flex-direction: row;
-	}
-}
 
 @media screen and (min-width: 1000px) {
-.container {
+.flex-container {
 	font-size: 1.4em;
 	}
 /*end copy*/
