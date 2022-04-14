@@ -90,12 +90,12 @@ nav a:hover{
 /*STYLES FOR CONTACT PAGE*/
 .contact-form{
   width:340px;
-  height:374px;
+  height:375px;
   background:#6d6e73;
-  border-radius:3px;
+  border-radius:1px;
   box-shadow:0 0 30px -10px #000;
-  margin:calc(40vh - 210px) auto;
-  padding:20px 30px;
+  margin:calc(50vh - 150px) auto;
+  padding:20px 20px;
   max-width:calc(100vw - 40px);
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
