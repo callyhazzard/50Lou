@@ -93,7 +93,7 @@ span > div {
 .product1 {
     order: 1;
     background: #77787e;
-    z-index: 200;
+    z-index: 150;
 }
 .product2 {
     order: 2;
@@ -103,12 +103,12 @@ span > div {
 .product3 {
     order: 3;
     background: #4f5054;
-    z-index: 100;
+    z-index: 150;
 }
 .product4 {
     order: 4;
     background: #3b3c3f;
-    z-index: 50;
+    z-index: 150;
 }
 /* the following media's are to make this look nicer on bigger screens. */
 
