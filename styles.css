@@ -82,7 +82,6 @@ span > div {
     color: white;
     flex-wrap:wrap;
     align-items: center;
-    background: #333;
 }
 /* sets all flexboxes to be same length */
 .flex-container span {
