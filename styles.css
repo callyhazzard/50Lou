@@ -70,10 +70,17 @@ nav a:hover{
   width: 325px;
   display:flex;
 }
+/*trying flex boxes out*/
+span > div {
+	padding: 20px 25px;
+	box-shadow: 5px 5px 9px rgba(0,0,0,.5);
+}
 .flex-container {
   display: flex;
   justify-content:space-around;
-  align-items: center;
+  }
+.flex-container<{
+  align-items: grid;
 }
 .footer{
   text-align: center;
@@ -91,7 +98,7 @@ nav a:hover{
   align-items:center;
   color:#397d7c;
   text-decoration:none;
-  font-size: 1em;
+  font-size: 2em;
 }
 
 /*STYLES FOR CONTACT PAGE*/
