@@ -21,16 +21,29 @@
   <main class="wrapper">
     <nav>
       <a href="index.html">Home</a>
-      <a href="#">About Us</a>
+      <a href="about.html">About Us</a>
       <a href="contact.html">Contact Us</a>
     </nav>
 
     <form class="contact-form" action="index.html" method="post">
       <h2>CONTACT US</h2>
-      <p type="Name:"><input placeholder="Your name here"></input></p>
-      <p type="Email:"><input placeholder="Stay in touch"></input></p>
-      <p type="Message:"><input placeholder="How can we help?"></input></p>
-      <button>Submit</button>
+      <label for="name"><p>Name: <br></p>
+                <p type="Name:"><input placeholder="Your name here"></input></p>
+             </label>
+      <label for="email"><p>Email: <br></p>
+              <p type="Email:"><input type="email" placeholder="Stay in touch"></input></p>
+             </label>
+
+             <label for="message"><p>Message: <br></p>
+               <textarea name="message" placeholder="How can we help?" required rows="5" cols="25"></textarea>
+             </label>
+
+             <label for="newsletter" class="newsletter">
+               <input type="checkbox" class="cursor" name="news" checked><p>Check Out Our Newsletter</p>
+             </label>
+             <form method="get" action="/thankyou.html">
+      <button class="custom-btn btn-4" button type="submit"><span>Submit</span></button>
+    </form>
     </form>
 </main>
 <footer class="footer">

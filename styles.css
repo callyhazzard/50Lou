@@ -110,12 +110,6 @@ span > div {
     z-index: 150;
 }
 */
-/* the following media's are to make this look nicer on bigger screens. */
-
-@media screen and (min-width: 1000px) {
-.flex-container {
-	font-size: 1.4em;
-	}
 /*end copy*/
 /* my previous attempts
 .flex-container {
@@ -135,7 +129,7 @@ end attempt*/
 .footer a{
   padding:10px;
   margin:5px;
- 
+
 }
 .footer p{
   justify-content:space-around;
@@ -147,13 +141,13 @@ end attempt*/
 
 /*STYLES FOR CONTACT PAGE*/
 .contact-form{
-  width:340px;
-  height:375px;
+  width:350px;
+  height:60%;
   background:#6d6e73;
   border-radius:1px;
   box-shadow:0 0 30px -10px #000;
   margin:calc(50vh - 150px) auto;
-  padding:20px 20px;
+  padding:20px;
   max-width:calc(100vw - 40px);
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
@@ -166,12 +160,129 @@ end attempt*/
   color:white;
   border-bottom:3px solid #78788c
 }
+label{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+label p{
+  padding: 0 10px;
+  display: ruby;
+}
+
+.newsletter{
+  display: grid;
+}
+textarea{
+  min-height: 100px;
+  width: 100%;
+  padding: 1.7%;
+  margin: 1.5% 0;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+/*My original button styling for comparison
 button{
   background-color:white;
   border-radius:3px;
-  padding:10px;
+  padding:10px;*/
 
+  /*Submit button styles borrowed and adapted from
+  https://codepen.io/yuhomyan/pen/OJMejWJ*/
+  button {
+  margin: 20px;
 }
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+  .btn-4 {
+    background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-4:hover{
+    background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  }
+  .btn-4 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-4:before,
+  .btn-4:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-4:before {
+    height: 0%;
+    width: .1px;
+  }
+  .btn-4:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-4:hover:before {
+    height: 100%;
+  }
+  .btn-4:hover:after {
+    width: 100%;
+  }
+  .btn-4 span:before,
+  .btn-4 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2),
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-4 span:before {
+    width: .1px;
+    height: 0%;
+  }
+  .btn-4 span:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-4 span:hover:before {
+    height: 100%;
+  }
+  .btn-4 span:hover:after {
+    width: 100%;
+  }
+
 /*
 input{
   width:100%;
@@ -223,7 +334,18 @@ span{
 }*/
 /*additional styles borrowed from https://codepen.io/leenalavanya/pen/mPWdPZ*/
 /*END STYLES FOR CONTACT PAGE*/
+/* STYLES FOR ABOUT PAGE */
+.about{
+  display:flex;
+  background-image:linear-gradient(white lightgrey black);
+}
+/*END STYLES FOR ABOUT PAGE*/
 /*desktop styles below*/
+/* the following media's are to make this look nicer on bigger screens. */
+@media screen and (min-width: 1000px) {
+.flex-container {
+	font-size: 1.4em;
+	}
 @media only screen and (min-width: 700px) {
   .wrapper{
     width:85%;
@@ -238,5 +360,6 @@ nav li{
 .search{
   display:flex;
   min-width:100%;
+}
 }
 }
