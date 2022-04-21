@@ -146,12 +146,14 @@ end attempt*/
 
 
 /*STYLES FOR CONTACT PAGE*/
+.wrapperhours{
+  width:50%;
+}
 .contact-form{
   width:100%;
   height:60%;
   background:#6d6e73;
   border-radius:1px;
-  box-shadow:0 0 30px -10px #000;
   padding:20px;
   margin:25px;
   max-width:90%;
@@ -182,7 +184,7 @@ label p{
 }
 textarea{
   min-height: 100px;
-  width: 100%;
+  width: 90%;
   padding: 1.7%;
   margin: 1.5% 0;
   font-size: 1em;
@@ -190,12 +192,12 @@ textarea{
   border-radius: 4px;
   box-sizing: border-box;
 }
-/*My original button styling for comparison
-button{
-  background-color:white;
-  border-radius:3px;
-  padding:10px;*/
-
+input{
+  width:90%;
+}
+.hours{
+  width:100%;
+}
   /*Submit button styles borrowed and adapted from
   https://codepen.io/yuhomyan/pen/OJMejWJ*/
   button {
@@ -214,9 +216,6 @@ button{
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
 }
   .btn-4 {
@@ -431,14 +430,51 @@ span{
     width:85%;
     margin:auto;
     }
+  nav li{
+    display: inline-block;
+  }
+  .search{
+    display:flex;
+    min-width:100%;
+  }
   .hero{
     height:400px;
   }
-nav li{
-  display: inline-block;
+  .contact-form{
+  width: 80%;
+  margin: auto;
+  }
+  .contact-form input, .contact-form textarea{
+  display: block;
+  width: auto;
+  border: 1px white solid;
+  border-radius: 3px;
 }
-.search{
-  display:flex;
-  min-width:100%;
+  .contact-form input[type="submit"]{
+  color: white;
+  background-color:;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  height: 33px;
+  border: none;
+  margin-right: auto;
 }
+.wrapper2{
+  width:50%;
+}
+  .map{
+  width: auto;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  padding-bottom: 5px;
+  }
+  .flex-container2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 }
