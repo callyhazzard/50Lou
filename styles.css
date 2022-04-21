@@ -338,9 +338,6 @@ span{
 }*/
 /*additional styles borrowed from https://codepen.io/leenalavanya/pen/mPWdPZ*/
 /*trying out table for contact page*/
-body {
-  margin: 40px;
-}
 
 .hours {
   display: grid;
@@ -392,6 +389,7 @@ body {
 .flex-container {
 	font-size: 1.4em;
 	}
+}
 @media only screen and (min-width: 700px) {
   .wrapper{
     width:85%;
@@ -406,6 +404,5 @@ nav li{
 .search{
   display:flex;
   min-width:100%;
-}
 }
 }
