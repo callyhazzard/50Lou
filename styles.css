@@ -3,8 +3,10 @@ font-size:16px;
   /*base font size*/
 font-family: Helvetica, sans-serif;
 background-image: linear-gradient(white, #6d6e73, black);
-line-height: 1.1em;
+line-height: 1.4em;
 color: black;
+margin:0;
+padding:0;
 }
 header{
   width:100%;
@@ -33,7 +35,7 @@ nav a{
   margin:5px;
   color:#397d7c;
   text-decoration:none;
-  font-size: 1.4em;
+  font-size: 1.2em;
 }
 nav a:hover{
   color:#62d6d9;
@@ -65,7 +67,7 @@ nav a:hover{
   display:flex;
 }
 .search input{
-  width: 325px;
+  width: auto;
   display:flex;
 }
 .footer{
@@ -145,20 +147,20 @@ end attempt*/
 
 /*STYLES FOR CONTACT PAGE*/
 .contact-form{
-  width:350px;
+  width:100%;
   height:60%;
   background:#6d6e73;
   border-radius:1px;
   box-shadow:0 0 30px -10px #000;
-  margin:calc(50vh - 150px) auto;
   padding:20px;
-  max-width:calc(100vw - 40px);
+  margin:25px;
+  max-width:90%;
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
   position:relative;
 }
 .contact-form h2{
-  margin:10px 0;
+  margin:15px;
   padding-bottom:10px;
   width:180px;
   color:white;
@@ -172,11 +174,11 @@ label{
 
 label p{
   padding: 0 10px;
-  display: ruby;
+  display: inline;
 }
 
 .newsletter{
-  display: grid;
+  display: block;
 }
 textarea{
   min-height: 100px;
@@ -351,6 +353,12 @@ span{
   font-size: 1.2em;
   border-bottom:1px lightgrey solid;
 }
+.map{
+  width:100%;
+  height:450px;
+  border: 0;
+
+}
 /*END STYLES FOR CONTACT PAGE*/
 /* STYLES FOR ABOUT PAGE */
 .aboutimg{
@@ -368,7 +376,6 @@ span{
   flex-wrap:wrap;
   justify-content:center;
   color:#62d6d9;
-  line-height:normal;
 }
 .about p{
   display:block;
@@ -377,18 +384,47 @@ span{
   font-size: 1em;
   font-style:normal;
   font-family:sans-serif;
-  line-height: normal;
 }
 .grid-container {
-  display: grid;
-}
+    color: white;
+    /*display: grid;*/
+    grid-template-columns: auto auto;
+    background-color: rgba( 98, 216, 217, 0.4);
+    padding: 10px;
+  }
+
+  .grid-item {
+    background-color:rgba( 98, 214, 217, 0.2);
+    padding: 10px;
+    font-size: 1em;
+    text-align: left;
+  }
+  .grid-item img{
+    width:100%;
+  }
+
 /*END STYLES FOR ABOUT PAGE*/
 /*desktop styles below*/
 /* the following media's are to make this look nicer on bigger screens. */
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 700px) {
 .flex-container {
 	font-size: 1.4em;
 	}
+  .grid-container {
+      color: white;
+      display: grid;
+      grid-template-columns: auto auto;
+      padding: 10px;
+    }
+
+    .grid-item {
+      padding: 10px;
+      font-size:1em;
+      text-align: left;
+    }
+    .grid-item img{
+      width:400px;
+    }
 }
 @media only screen and (min-width: 700px) {
   .wrapper{
