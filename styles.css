@@ -88,7 +88,7 @@ nav a:hover{
   text-decoration:none;
   font-size: 1.2em;
 }
-/*trying flex boxes out on index*/
+/* STYLES SPECIFIC TO INDEX*/
 span > div {
 	padding: 20px 25px;
 	box-shadow: 5px 5px 9px rgba(0,0,0,.5);
@@ -144,10 +144,11 @@ span > div {
 }
 end attempt*/
 
-
+/*END STYLES FOR INDEX*/
 /*STYLES FOR CONTACT PAGE*/
 .wrapperhours{
-  width:50%;
+  width:100%;
+  flex-wrap: wrap;
 }
 .contact-form{
   width:100%;
@@ -359,6 +360,16 @@ span{
 
 }
 /*END STYLES FOR CONTACT PAGE*/
+/*STYLES FOR THANK YOU PAGE*/
+.hero2{
+  width: 100%;
+  background:url("thankyou.jpg");
+  height:400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+/*END STYLES FOR THANK YOU PAGE*/
 /* STYLES FOR ABOUT PAGE */
 .aboutimg{
   display:flex;
@@ -388,12 +399,12 @@ span{
     color: white;
     /*display: grid;*/
     grid-template-columns: auto auto;
-    background-color: rgba( 98, 216, 217, 0.4);
+    background-color: rgba( 98, 216, 217, 0.05);
     padding: 10px;
   }
 
   .grid-item {
-    background-color:rgba( 98, 214, 217, 0.2);
+    background-color:rgba( 98, 214, 217, 0.3);
     padding: 10px;
     font-size: 1em;
     text-align: left;
