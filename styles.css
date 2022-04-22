@@ -113,6 +113,7 @@ span > div {
 .product {
     background: #77787e;
     z-index: 150;
+    max-width:400px;
 
   }
   .product {
@@ -178,6 +179,7 @@ label{
 label p{
   padding: 0 10px;
   display: inline;
+  color:white;
 }
 
 .newsletter{
