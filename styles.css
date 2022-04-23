@@ -22,7 +22,9 @@ header img{
 /* NOTE Added some space around icons */
 header i{
   margin: 0 0 10px 10px;
+  display:inline-flex;
 }
+
 img{
   max-width:100%;
   /* i can use max-width:100% also */
@@ -55,7 +57,7 @@ nav a:hover{
 }
 .hero{
   width: 100%;
-  background:url("giftlarge2duotone.jpg");
+  background:url("giftgreyscale.jpg");
   height:400px;
   background-position: center;
   background-size: cover;
@@ -66,7 +68,8 @@ nav a:hover{
   color:white;
   top:40%;
   right:10%;
-  font-family: 'Saira Condensed', Helvetica, sans-serif;
+  font-family: 'BIZ UDMincho', serif;
+  font-family: 'Rozha One', serif;
 }
 .caption{
   color:#397d7c;
@@ -78,12 +81,18 @@ nav a:hover{
 }
 h2{
   font-family: 'BIZ UDMincho', serif;
+  font-family: 'Rozha One', serif;
 }
 h3{
   font-family: 'BIZ UDMincho', serif;
+  font-family: 'Rozha One', serif;
 }
 h4{
   font-family: 'BIZ UDMincho', serif;
+  font-family: 'Rozha One', serif;
+}
+p{
+
 }
 
 .footer{
@@ -92,11 +101,12 @@ h4{
   padding:10px;
   background-color:white;
 }
+
 .footer a{
   padding:10px;
   margin:5px;
-
 }
+
 .footer p{
   justify-content:space-around;
   align-items:center;
@@ -318,56 +328,6 @@ button {
   .btn-4 span:hover:after {
     width: 100%;
   }
-
-/*
-input{
-  width:100%;
-  padding:10px;
-  box-sizing:border-box;
-  background:none;
-  outline:none;
-  resize:none;
-  border:0;
-  font-family:'Montserrat',sans-serif;
-  transition:all .3s;
-  border-bottom:2px solid #bebed2
-}
-input:focus{
-  border-bottom:2px solid #78788c
-}
-p:before{
-  content:attr(type);
-  display:block;
-  margin:28px 0 0;
-  font-size:14px;
-  color:#5a5a5a
-}
-button{
-  float:right;
-  padding:8px 12px;
-  margin:8px 0 0;
-  font-family:'Montserrat',sans-serif;border:2px solid #78788c;
-  background:0;color:#5a5a6e;
-  cursor:pointer;transition:all .3s
-}
-button:hover{
-  background:#78788c;
-  color:#fff
-}
-div{
-  content:'Hi';
-  position:absolute;
-  bottom:-15px;right:-20px;
-  background:#50505a;
-  color:#fff;
-  width:320px;
-  padding:16px 4px 16px 0;
-  border-radius:6px;
-  font-size:13px;
-  box-shadow:10px 10px 40px -14px #000}
-span{
-  margin:0 5px 0 15px
-}*/
 /*additional styles borrowed from https://codepen.io/leenalavanya/pen/mPWdPZ*/
 /*trying out table for contact page*/
 
@@ -400,6 +360,22 @@ span{
 }
 /*END STYLES FOR THANK YOU PAGE*/
 /* STYLES FOR ABOUT PAGE */
+.abouthero{
+  width: 100%;
+  background:url("storefront.jpg");
+  height:400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.abouthero h2{
+  position: absolute;
+  color:white;
+  top:20%;
+  right:60%;
+  font-family: 'BIZ UDMincho', serif;
+  font-family: 'Rozha One', serif;
+}
 .aboutimg{
   display:flex;
   background-image:linear-gradient(white lightgrey black);
@@ -428,12 +404,12 @@ span{
     color: white;
     /*display: grid;*/
     grid-template-columns: auto auto;
-    background-color: rgba( 98, 216, 217, 0.05);
+    background-color:;
     padding: 10px;
   }
 
   .grid-item {
-    background-color:rgba( 98, 214, 217, 0.3);
+    background-color: #77787e;
     padding: 10px;
     font-size: 1em;
     text-align: left;
@@ -478,7 +454,7 @@ span{
     min-width:100%;
   }
   .hero{
-    height:400px;
+    height:450px;
   }
   /* .contact-form{
   width: 80%;
@@ -520,6 +496,11 @@ span{
   section{
     width: 49%;
     display: inline-block;
-
+  }
+  header img{
+    height:200px;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
   }
 }
