@@ -18,12 +18,18 @@ header img{
   margin-right:auto;
   display:block;
 }
+
+/* NOTE Added some space around icons */
+header i{
+  margin: 0 0 10px 10px;
+}
 img{
   max-width:100%;
   /* i can use max-width:100% also */
-  background:url("logo.jpg");
+  /* NOTE I removed teh logo from the background of all images */
+  /* background:url("logo.jpg"); */
   /* remove height when I have an image */
-  display:flex;
+  /* display:flex; */
 }
 nav{
   text-align: center;
@@ -91,7 +97,8 @@ nav a:hover{
 /* STYLES SPECIFIC TO INDEX*/
 span > div {
 	padding: 20px 25px;
-	box-shadow: 5px 5px 9px rgba(0,0,0,.5);
+  /* NOTE lightened the shadow */
+	box-shadow: 5px 5px 9px rgba(0,0,0,.2);
   justify-content: flex-center;
 }
 /*copied from codepen https://codepen.io/qkombur/pen/dPxjJy example*/
@@ -100,13 +107,14 @@ span > div {
     display: flex;
     color: white;
     flex-wrap:wrap;
-    align-items: center;
+    /* NOTE changed align to justify */
+    justify-content: center;
 }
 /* sets all flexboxes to be same length */
 .flex-container span {
-    flex: 1;
-	flex-wrap:wrap;
-	display:flex;
+    flex-grow: 1;
+  	flex-wrap:wrap;
+  	display:flex;
 
 }
 /* Order # can be changed to switch order of boxes z-index is used to layer boxes. */
@@ -114,10 +122,10 @@ span > div {
     background: #77787e;
     z-index: 150;
     max-width:400px;
-
+    /* NOTE added margin so you can see the card edges */
+    margin:10px;
   }
-  .product {
-}
+
 /*.product2 {
     order: 2;
     background: #636469;
@@ -153,37 +161,41 @@ end attempt*/
 }
 .contact-form{
   width:100%;
-  height:60%;
-  background:#6d6e73;
-  border-radius:1px;
-  padding:20px;
-  margin:25px;
-  max-width:90%;
+  /* height:60%; */
+  /* background:#6d6e73; */
+  /* NOTE Added your drop shaddow back in */
+  /* box-shadow: 5px 5px 9px rgba(0,0,0,.2); */
+  /* border-radius:1px; */
+  padding-bottom:20px;
+  /* margin:10px; */
+  /* max-width:90%; */
   box-sizing:border-box;
   font-family:'Montserrat',sans-serif;
-  position:relative;
+  /* position:relative; */
 }
-.contact-form h2{
+/* .contact-form h2{
   margin:15px;
   padding-bottom:10px;
   width:180px;
   color:white;
   border-bottom:3px solid #78788c
-}
+} */
 label{
-  display: block;
+  /* display: block;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 40px; */
 }
 
 label p{
-  padding: 0 10px;
-  display: inline;
-  color:white;
+  /* padding: 0 10px; */
+  /* display: inline; */
+  /* color:white; */
 }
 
-.newsletter{
-  display: block;
+.newsletter input{
+  /* display: inline-block; */
+  width:15px;
+  height: 15px;
 }
 textarea{
   min-height: 100px;
@@ -197,19 +209,20 @@ textarea{
 }
 input{
   width:90%;
+  height:30px;
 }
 .hours{
   width:100%;
 }
   /*Submit button styles borrowed and adapted from
   https://codepen.io/yuhomyan/pen/OJMejWJ*/
-  button {
-  margin: 20px;
+button {
+  /* margin: 20px; */
 }
 .custom-btn {
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: #0d4a47;
   border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
@@ -223,7 +236,7 @@ input{
 }
   .btn-4 {
     background-color: #4dccc6;
-  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 50%);
     line-height: 42px;
     padding: 0;
     border: none;
@@ -345,9 +358,8 @@ span{
 
 .hours {
   display: grid;
-  grid-template-columns: 150px 150px;
-  grid-gap: 10px;
-  background-color: #fff;
+  grid-template-columns: 200px 200px;
+  grid-gap: 20px;
   color: #444;
 }
 
@@ -453,7 +465,7 @@ span{
   .hero{
     height:400px;
   }
-  .contact-form{
+  /* .contact-form{
   width: 80%;
   margin: auto;
   }
@@ -471,16 +483,16 @@ span{
   height: 33px;
   border: none;
   margin-right: auto;
-}
-.wrapper2{
-  width:50%;
-}
+} */
+  .wrapper2{
+    width:50%;
+  }
   .map{
-  width: auto;
-  margin: auto;
-  margin-bottom: 15px;
-  padding: 10px;
-  padding-bottom: 5px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    padding: 10px;
+    padding-bottom: 5px;
   }
   .flex-container2{
     display: flex;
@@ -489,5 +501,10 @@ span{
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
+  }
+  section{
+    width: 49%;
+    display: inline-block;
+
   }
 }
