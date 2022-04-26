@@ -71,6 +71,9 @@ nav a:hover{
   font-family: 'BIZ UDMincho', serif;
   font-family: 'Rozha One', serif;
 }
+.fa-solid fa-magnifying-glass{
+	display:inline;
+}
 .caption{
   color:#397d7c;
   display:flex;
